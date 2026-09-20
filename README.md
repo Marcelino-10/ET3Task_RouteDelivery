@@ -1,5 +1,32 @@
 # Delivery Route Planner
 
+## Setup and Execution Instructions
+
+### Prerequisites
+* **Java Development Kit (JDK):** Version 8 or higher.
+* **Maven:** Ensure Maven is installed and available in your system's PATH.
+
+### Running from the Command Line
+1. **Navigate to the Project Root:** Open your terminal and navigate to the directory containing the `pom.xml` file.
+2. **Compile the Project:**
+   ```bash
+   mvn clean compile
+   ```
+3. **Run the Application:**
+   Execute the `Main` class using Maven:
+   ```bash
+   mvn exec:java -Dexec.mainClass="org.example.Main"
+   ```
+
+### Running from an IDE
+1. Open your preferred Java IDE (e.g., IntelliJ IDEA, Eclipse, VS Code).
+2. Select **Open** or **Import Project** and choose the root folder of this project.
+3. Allow the IDE to automatically resolve the Maven dependencies.
+4. Locate `src/main/java/org/example/Main.java`.
+5. Run the `main` method directly from the IDE.
+
+---
+
 ## 1. Solution Approach
 I designed the program using object-oriented principles with the following core classes:
 * `Delivery`: Stores individual delivery data (ID, area, priority, weight).
